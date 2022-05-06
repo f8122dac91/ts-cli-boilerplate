@@ -8,6 +8,7 @@
   "scripts": {
     "cli": "ts-node src/cli.ts",
     "lint": "eslint src/ --ext .js,.ts",
+    "typecheck": "tsc --noEmit -p ./tsconfig.json",
     "clean": "rm -rf dist",
     "esbuild": "esbuild src/cli.ts --bundle --platform=node --minify --sourcemap=external --outfile=dist/esbuild/cli.js",
     "build": "tsc -p tsconfig.json"
